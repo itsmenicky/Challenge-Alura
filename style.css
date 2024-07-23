@@ -55,6 +55,11 @@ body{
     resize: none;
 }
 
+.saida-texto{
+    font-size: 40px;
+    color: #0A3871;
+}
+
 #aviso{
     padding-top: 20px;
 }
