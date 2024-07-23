@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --main-color: #F3F5FC;
+}
+
+nav{
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+.container-saida-texto{
+    width: 30%;
+    height: 100vh;
+    box-shadow: 1px 5px 5px 5px rgba(128, 128, 128, 0.11);
+    border-radius: 32px;
+    background-color: white;
+    color: #343A40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-saida-texto img{
+    max-width: 100%;
+}
+
+.container-entrada-texto{
+    padding-top: 5rem;
+    width: 50%;
+    text-align: left;
+}
+
+#entrada-texto{
+    max-width: 680px;
+    height: 600px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: #0A3871;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+
+#aviso{
+    padding-top: 20px;
+}
+
+.btn-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+#cripto-btn{
+    background-color: #0A3871;
+    color: white;
+}
+
+#descripto-btn{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+@media  screen and (max-width: 1480px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-container{
+        justify-content: center;
+    }
+
+    .container-entrada-texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    #entrada-texto{
+        max-width: 100%;
+    }
+
+    .container-saida-texto{
+        margin: 2rem;
+        width: 100%;
+    }
+}
